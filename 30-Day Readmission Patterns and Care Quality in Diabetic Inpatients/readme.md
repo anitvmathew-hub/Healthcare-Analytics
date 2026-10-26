@@ -130,22 +130,6 @@ Healthcare-Analytics/
 - `Healthcare_Analytics_SRS.docx` – Software Requirements Specification documenting the project requirements.
 - `README.md` – Project overview and documentation.
 
-## How to Run the Project
-
-1. Clone or download this GitHub repository.
-2. Make sure Python and Jupyter Notebook are installed.
-3. Install the required libraries:
-
-   ```bash
-   pip install pandas numpy matplotlib jupyter
-   ```
-
-4. Keep `diabetic_data.csv` inside the `data` folder.
-5. Open Jupyter Notebook from the project directory.
-6. Run `Healthcare_Analytics_Phase1.ipynb` from top to bottom.
-
-The notebook uses a relative file path so the project can be run from the repository directory without relying on a personal computer's file location.
-
 ## Scope and Limitations
 
 - The dataset covers historical hospital encounters from **1999 to 2008**; findings may not reflect current healthcare practices.
