@@ -146,3 +146,22 @@ Healthcare-Analytics/
 The project scope, business problem, objectives, dataset requirements, and planned analysis are defined. The dataset has been loaded and its structure inspected.
 
 Detailed exploratory analysis, visualizations, and evidence-based findings will be documented in subsequent phases.
+
+**Phase 2: Data Preprocessing and Cleaning**
+
+Prepared the diabetes hospital encounter dataset for analysis by performing data quality checks and applying necessary cleaning steps.
+
+**Key Activities** 
+- Created a separate working copy to preserve the original dataset.
+- Identified missing and unknown values and standardized them using `NaN` and `Unknown`.
+- Reviewed and corrected data types, including ordered age categories.
+- Removed unnecessary leading and trailing spaces from text columns.
+- Standardized inconsistent categorical labels.
+- Checked for duplicate records and negative numerical values.
+- Examined numerical summary statistics and medication categories.
+- Retained all valid records without unnecessary data removal.
+
+**Outcome**
+
+Prepared a cleaned dataset containing **101,766 records and 50 columns**, preserving the original dataset structure for further analysis.
+
