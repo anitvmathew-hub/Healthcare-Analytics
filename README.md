@@ -149,19 +149,95 @@ Detailed exploratory analysis, visualizations, and evidence-based findings will 
 
 **Phase 2: Data Preprocessing and Cleaning**
 
-Prepared the diabetes hospital encounter dataset for analysis by performing data quality checks and applying necessary cleaning steps.
+# Phase 2 – Data Preprocessing & Cleaning
 
-**Key Activities** 
-- Created a separate working copy to preserve the original dataset.
-- Identified missing and unknown values and standardized them using `NaN` and `Unknown`.
-- Reviewed and corrected data types, including ordered age categories.
-- Removed unnecessary leading and trailing spaces from text columns.
-- Standardized inconsistent categorical labels.
-- Checked for duplicate records and negative numerical values.
-- Examined numerical summary statistics and medication categories.
-- Retained all valid records without unnecessary data removal.
+## Healthcare Analytics: 30-Day Readmission Patterns and Care Quality in Diabetic Inpatients
 
-**Outcome**
+Data preprocessing is a critical step in transforming raw healthcare data into a reliable dataset for analysis.
 
-Prepared a cleaned dataset containing **101,766 records and 50 columns**, preserving the original dataset structure for further analysis.
+In this phase, the Diabetes 130-US Hospitals dataset was cleaned and standardized using Python and Pandas. The objective was to improve data quality while preserving the complete dataset for further analysis of diabetic inpatient readmission patterns.
+
+### Dataset
+
+- **Dataset:** Diabetes 130-US Hospitals
+- **Original Records:** 101,766
+- **Original Features:** 50
+- **Final Records:** 101,766
+- **Final Features:** 50
+- **Data Source:** UCI Machine Learning Repository
+
+The original dataset was retained without removing any rows or columns.
+
+### Data Preparation Workflow
+
+The following preprocessing steps were performed:
+
+| Step | Process | Outcome |
+|---|---|---|
+| 01 | Dataset inspection | Reviewed structure, columns, and data types |
+| 02 | Missing-value assessment | Identified null and unknown values |
+| 03 | Missing-value standardization | Replaced `?` with `NaN` and standardized unknown categories |
+| 04 | Data type correction | Converted categorical identifiers to category datatype |
+| 05 | Age category ordering | Established the correct age-group sequence |
+| 06 | Duplicate validation | Confirmed no duplicate rows |
+| 07 | Numerical validation | Checked selected numerical variables for negative values |
+| 08 | Text standardization | Removed extra spaces and standardized selected labels |
+| 09 | Medication review | Examined medication status categories |
+| 10 | Final validation | Verified dataset consistency and completeness |
+
+### Key Data Cleaning Decisions
+
+**Missing and Unknown Values**
+
+The dataset contained unknown values represented by `?`. These were standardized to `NaN` and subsequently represented as `"Unknown"` in applicable categorical and text columns.
+
+This approach preserved patient encounter records without introducing assumptions about unavailable information.
+
+**Categorical Data Types**
+
+Admission type, discharge disposition, and admission source identifiers were converted to categorical data types because they represent coded categories rather than continuous numerical measurements.
+
+The age column was converted into an ordered categorical variable to support meaningful age-group comparisons.
+
+**Data Consistency**
+
+Text formatting was standardized by removing leading and trailing spaces. Selected categorical labels were also normalized to maintain consistency across the dataset.
+
+**Data Integrity**
+
+Duplicate records were checked and no duplicates were identified. Selected numerical columns were also validated for negative values.
+
+### Final Data Quality Results
+
+| Quality Check | Result |
+|---|---:|
+| Original Dataset Shape | 101,766 × 50 |
+| Cleaned Dataset Shape | 101,766 × 50 |
+| Remaining Null Values | 0 |
+| Remaining `?` Values | 0 |
+| Duplicate Records | 0 |
+| Rows Removed | 0 |
+| Columns Removed | 0 |
+
+
+### Outcome
+
+The preprocessing phase established a consistent and validated dataset for subsequent analytical tasks.
+
+The cleaned dataset maintains the complete original data structure while improving consistency in missing-value representation, categorical labels, and data types.
+
+The resulting dataset is ready for exploratory data analysis, with a focus on:
+
+- Patient demographics and age-group distribution
+- Hospital utilization patterns
+- Medication usage and treatment changes
+- Readmission patterns within 30 days
+- Factors associated with readmission outcomes
+
+### Next Phase
+
+**Phase 3 – Exploratory Data Analysis (EDA)**
+
+The next phase will investigate patient characteristics, hospital utilization, and readmission outcomes through statistical analysis and data visualization
+
 
