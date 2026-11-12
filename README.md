@@ -234,10 +234,122 @@ The resulting dataset is ready for exploratory data analysis, with a focus on:
 - Readmission patterns within 30 days
 - Factors associated with readmission outcomes
 
-### Next Phase
 
-**Phase 3 – Exploratory Data Analysis (EDA)**
+# Phase 3: Exploratory Data Analysis (EDA)
 
-The next phase will investigate patient characteristics, hospital utilization, and readmission outcomes through statistical analysis and data visualization
+## Overview
+
+The third phase of this project focuses on Exploratory Data Analysis (EDA) to identify patterns, trends, and relationships in diabetic inpatient hospital encounters.
+
+The objective is to understand patient demographics, hospital utilization, diabetes management, and factors associated with 30-day hospital readmissions.
+
+EDA was performed using three analytical approaches:
+
+- Univariate Analysis
+- Bivariate Analysis
+- Multivariate Analysis
+
+### Univariate Analysis
+
+Univariate analysis was performed to understand the distribution and characteristics of individual variables.
+
+The analysis covered:
+
+- Readmission outcome distribution
+- Patient age group distribution
+- Gender distribution
+- Race distribution
+- Length of hospital stay
+- Number of medications
+- Number of laboratory procedures
+- Previous inpatient visits
+- Number of medical procedures
+- Number of diagnoses
+- HbA1c test result distribution
+- Admission type distribution
+- Discharge disposition distribution
+
+#### Key Observations
+
+- Most hospital encounters involved patients aged 70–80 years.
+- The majority of hospital stays lasted between 1 and 4 days.
+- Most encounters involved a relatively small number of medical procedures.
+- The number of diagnoses was concentrated around 8 diagnoses, with approximately 49,474 encounters in that category.
+- Approximately 83.3% of encounters had an Unknown HbA1c result.
+- Emergency admissions accounted for approximately 53.05% of all encounters.
+- Discharge to home was the most common outcome, representing approximately 59.19% of encounters.
+
+### Bivariate Analysis
+
+Bivariate analysis was performed to investigate the relationship between two variables, with particular emphasis on their association with 30-day readmission.
+
+#### Analyses Performed
+
+| No. | Analysis | Objective |
+|---|---|---|
+| 1 | Age Group vs. 30-Day Readmission | Examine readmission patterns across age groups. |
+| 2 | Previous Inpatient Visits vs. 30-Day Readmission | Investigate whether previous hospitalizations are associated with readmission. |
+| 3 | Length of Hospital Stay vs. 30-Day Readmission | Understand how hospital stay duration relates to readmission. |
+| 4 | Discharge Disposition vs. 30-Day Readmission | Compare readmission rates across discharge destinations. |
+| 5 | Number of Diagnoses vs. 30-Day Readmission | Investigate the relationship between diagnosis count and readmission. |
+
+#### Key Observations
+
+- The 20–30 age group recorded the highest readmission rate at approximately 14.24%.
+- Readmission rates increased with previous inpatient admissions, reaching approximately 44.37% among encounters with eight previous inpatient admissions.
+- Readmission rates generally increased with hospital stay duration, although the trend was not continuous.
+- Patients discharged to rehabilitation facilities and skilled nursing facilities generally showed higher readmission rates than patients discharged directly home.
+- Readmission rates generally increased as the number of diagnoses increased from 1 to 9.
+
+### Multivariate Analysis
+
+Multivariate analysis was performed to examine the combined relationship between three or more variables and identify patterns that may not be visible through individual comparisons.
+
+#### Analyses Performed
+
+| No. | Analysis | Visualization |
+|---|---|---|
+| 1 | Age Group vs. Length of Hospital Stay and Readmission Rate | Heatmap |
+| 2 | Previous Inpatient Visits vs. Age Group and Readmission Rate | Grouped Bar Chart |
+| 3 | Admission Type vs. Discharge Disposition | Heatmap |
+| 4 | HbA1c Result vs. Medication Change and Readmission Rate | Grouped Bar Chart |
+| 5 | Number of Medications vs. Age Group and Readmission Rate | Grouped Bar Chart |
+
+### Key Observations
+
+- Readmission rates among middle-aged and older patients were relatively stable across different hospital stay durations.
+- Previous inpatient visits showed a strong association with readmission rates across most age groups.
+- Readmission rates varied across combinations of admission types and discharge destinations.
+- Encounters involving diabetes medication changes showed slightly higher readmission rates across HbA1c categories.
+- Higher medication counts were associated with increased readmission rates in several age groups.
+- Some unusually high readmission rates were observed in categories with small encounter counts and should be interpreted cautiously.
+
+### Overall Key Insights
+
+The exploratory analysis highlighted several important patterns:
+
+1. **Previous Hospitalizations:** Patients with a history of repeated inpatient admissions showed substantially higher 30-day readmission rates.
+
+2. **Patient Complexity:** A higher number of diagnoses and medications may indicate greater healthcare needs and a potential requirement for closer monitoring.
+
+3. **Length of Stay:** Longer hospital stays were generally associated with higher readmission rates, although the relationship was not consistently increasing.
+
+4. **Discharge Planning:** Readmission rates varied across discharge destinations, highlighting the importance of coordinated post-discharge care.
+
+5. **Diabetes Monitoring:** The high proportion of Unknown HbA1c results highlights an opportunity to investigate diabetes monitoring and test documentation practices.
+
+6. **Medication Management:** Slightly higher readmission rates among encounters involving medication changes suggest the importance of medication reconciliation and follow-up care.
+
+
+### Conclusion
+
+The EDA phase provided valuable insights into 30-day hospital readmission patterns among diabetic inpatients.
+
+Previous inpatient admissions emerged as an important factor associated with higher readmission rates. Other factors, including age, length of hospital stay, number of diagnoses, medication patterns, and discharge destination, also showed variations in readmission outcomes.
+
+The findings highlight opportunities for healthcare providers to investigate patient complexity, strengthen discharge planning, improve diabetes monitoring, and support coordinated post-discharge care.
+
+This exploratory analysis establishes a foundation for further investigation into the factors associated with hospital readmissions and the development of data-driven healthcare recommendations.
+
 
 
