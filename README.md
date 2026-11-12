@@ -116,19 +116,39 @@ The repository will be organized as follows:
 Healthcare-Analytics/
 │
 ├── data/
-│   └── diabetic_data.csv
+│   ├── raw/
+│   │   └── diabetic_data.csv
+│   │
+│   └── processed/
+│       └── df_cleaned.csv
 │
-├── Healthcare_Analytics_Phase1.ipynb
+├── notebooks/
+│   ├── Healthcare_Analytics_Phase1.ipynb
+│   ├── Healthcare_Analytics_Phase2.ipynb
+│   ├── Healthcare_Analytics_Phase3_EDA.ipynb
+│   └── Healthcare_Analytics_Phase4_Insights.ipynb
 │
-├── Healthcare_Analytics_SRS.docx
+├── reports/
+│   ├── Healthcare_Analytics_SRS.docx
+│   └── Project_Insights.md
 │
-└── README.md
+├── visualizations/
+│   ├── univariate/
+│   ├── bivariate/
+│   └── multivariate/
+│
+├── README.md
+│
+└── requirements.txt
 ```
 
-- `data/diabetic_data.csv` – Original dataset used for the project.
-- `Healthcare_Analytics_Phase1.ipynb` – Project overview, business problem, objectives, dataset inspection, planned analysis, and scope.
-- `Healthcare_Analytics_SRS.docx` – Software Requirements Specification documenting the project requirements.
-- `README.md` – Project overview and documentation.
+- data/raw/	    -          Original diabetic dataset
+- data/processed/  -    	  Cleaned dataset after preprocessing
+- notebooks/	 -           Separate notebooks for each project phase
+- reports/	-              SRS and business findings
+- visualizations/  -       Exported charts and graphs
+- README.md	  -            Project overview, objectives, methodology and results
+- requirements.txt -     	Python libraries required to run the project
 
 ## Scope and Limitations
 
