@@ -159,15 +159,6 @@ Healthcare-Analytics/
 - Readmission status alone is not a complete measure of healthcare quality.
 - The project focuses on analytical insights and does not provide medical advice or individual patient recommendations.
 
-## Project Status
-
-**Phase 1 – Project Proposal and Initial Dataset Inspection**
-
-The project scope, business problem, objectives, dataset requirements, and planned analysis are defined. The dataset has been loaded and its structure inspected.
-
-Detailed exploratory analysis, visualizations, and evidence-based findings will be documented in subsequent phases.
-
-**Phase 2: Data Preprocessing and Cleaning**
 
 # Phase 2 – Data Preprocessing & Cleaning
 
