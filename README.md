@@ -362,42 +362,26 @@ The findings highlight opportunities for healthcare providers to investigate pat
 
 This exploratory analysis establishes a foundation for further investigation into the factors associated with hospital readmissions and the development of data-driven healthcare recommendations.
 
-## 📊 Dashboard Preview
-
-### Executive Dashboard
-![Executive Dashboard](Healthcare_Analytics/image/Executive Overview.png)
-
-### Readmission Overview
-![Readmission Overview](image/Patient Risk & Readmission Analysis.png)
-
-### Patient Analysis
-![Patient Analysis](image/Clinical & Care Quality Analysis.png)
-
-### Hospital Utilization & Operational Insights
-![Readmission Overview](image/Hospital Utilization & Operational Insights.png)
-
-### Clinical & Medication Insights
-![Patient Analysis](image/Clinical & Medication Insights.png)
 
 
-# 📊 Dashboard Preview
+# Dashboard Preview
 
 ## 1. Executive Dashboard
 
-![Executive Dashboard](./image/Executive%20Overview.png)
+![Executive Dashboard](./image/Executive_Overview.png)
 
 ## 2. Readmission Overview
 
-![Readmission Overview](./image/Patient%20Risk%20%26%20Readmission%20Analysis.png)
+![Readmission Overview](./image/Patient_Risk_Readmission_Analysis.png)
 
 ## 3. Patient Analysis
 
-![Patient Analysis](./image/Clinical%20%26%20Care%20Quality%20Analysis.png)
+![Patient Analysis](./image/ClinicalCare_QualityAnalysis.png)
 
-## 4. Hospital Utilization & Operational Insights
+## 4. Hospital Utilization Insights
 
-![Hospital Utilization](./image/Hospital%20Utilization%20%26%20Operational%20Insights.png)
+![Hospital Utilization Insights](./image/Hospital_Utilization_Operational_Insights.png)
 
-## 5. Clinical & Medication Insights
+## 5. Clinical Medication Insights
 
-![Clinical Insights](./image/Clinical%20%26%20Medication%20Insights.png)
+![Clinical Medication Insights](./image/Clinical_Medication_Insights.png)
