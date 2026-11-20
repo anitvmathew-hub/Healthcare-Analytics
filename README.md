@@ -365,7 +365,7 @@ This exploratory analysis establishes a foundation for further investigation int
 ## 📊 Dashboard Preview
 
 ### Executive Dashboard
-![Executive Dashboard](image/Executive Overview.png)
+![Executive Dashboard](./image/Executive Overview.png)
 
 ### Readmission Overview
 ![Readmission Overview](image/Patient Risk & Readmission Analysis.png)
