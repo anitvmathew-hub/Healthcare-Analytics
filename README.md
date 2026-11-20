@@ -365,7 +365,7 @@ This exploratory analysis establishes a foundation for further investigation int
 ## 📊 Dashboard Preview
 
 ### Executive Dashboard
-![Executive Dashboard](./image/Executive Overview.png)
+![Executive Dashboard](Healthcare_Analytics/image/Executive Overview.png)
 
 ### Readmission Overview
 ![Readmission Overview](image/Patient Risk & Readmission Analysis.png)
@@ -378,3 +378,26 @@ This exploratory analysis establishes a foundation for further investigation int
 
 ### Clinical & Medication Insights
 ![Patient Analysis](image/Clinical & Medication Insights.png)
+
+
+# 📊 Dashboard Preview
+
+## 1. Executive Dashboard
+
+![Executive Dashboard](./image/Executive%20Overview.png)
+
+## 2. Readmission Overview
+
+![Readmission Overview](./image/Patient%20Risk%20%26%20Readmission%20Analysis.png)
+
+## 3. Patient Analysis
+
+![Patient Analysis](./image/Clinical%20%26%20Care%20Quality%20Analysis.png)
+
+## 4. Hospital Utilization & Operational Insights
+
+![Hospital Utilization](./image/Hospital%20Utilization%20%26%20Operational%20Insights.png)
+
+## 5. Clinical & Medication Insights
+
+![Clinical Insights](./image/Clinical%20%26%20Medication%20Insights.png)
