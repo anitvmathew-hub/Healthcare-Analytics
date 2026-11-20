@@ -382,6 +382,6 @@ This exploratory analysis establishes a foundation for further investigation int
 
 ![Hospital Utilization Insights](./image/Hospital_Utilization_Operational_Insights.png)
 
-## 5. Clinical Medication Insights
+## 5. Clinical & Medication Insights
 
-![Clinical Medication Insights](./image/Clinical_Medication_Insights.png)
+![Clinical & Medication Insights](./image/Clinical_Medication_Insights.png)
