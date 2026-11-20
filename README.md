@@ -117,39 +117,44 @@ Healthcare-Analytics/
 │
 ├── data/
 │   ├── raw/
-│   │   └── diabetic_data.csv
+│   │   ├── diabetic_data.csv              # Original UCI dataset (101,766 rows, 50 columns)
+│   │   └── IDS_mapping.csv                # Lookup for admission type, discharge disposition, admission source
 │   │
 │   └── processed/
-│       └── df_cleaned.csv
+│       └── diabetic_data_cleaned.csv      # Cleaned dataset from Phase 2 (no rows or columns removed)
 │
 ├── notebooks/
-│   ├── Healthcare_Analytics_Phase1.ipynb
-│   ├── Healthcare_Analytics_Phase2.ipynb
-│   ├── Healthcare_Analytics_Phase3_EDA.ipynb
-│   └── Healthcare_Analytics_Phase4_Insights.ipynb
+│   └── Healthcare_Analytics_30dayReadmission_pattern.ipynb   # Cleaning, ID mapping, EDA and insights
+│
+├── dashboard/
+│   └── Hospital_Readmissions(30days).pbix         # Power BI dashboard (5 analysis pages + home)
 │
 ├── reports/
-│   ├── Healthcare_Analytics_SRS.docx
-│   └── Project_Insights.md
+│   ├── Healthcare_Analytics_SRS.docx              # Phase 1: Software Requirements Specification
+│   └── Healthcare_Analytics_Project_Report.pdf    # Full project report
 │
-├── visualizations/
-│   ├── univariate/
-│   ├── bivariate/
-│   └── multivariate/
+├── image/                                         # Dashboard screenshots used in this README
+│   ├── Home.png
+│   ├── Executive_Overview.png
+│   ├── Patient_Risk_Readmission_Analysis.png
+│   ├── ClinicalCare_QualityAnalysis.png
+│   ├── Hospital_Utilization_Operational_Insights.png
+│   └── Clinical_Medication_Insights.png
 │
-├── README.md
-│
-└── requirements.txt
+├── README.md                                      # Project overview, methodology and results
+└── requirements.txt                               # Python libraries needed to run the notebook
 ```
 
-- data/raw/	    -          Original diabetic dataset
-- data/processed/  -    	  Cleaned dataset after preprocessing
-- notebooks/	 -           Separate notebooks for each project phase
-- reports/	-              SRS and business findings
-- visualizations/  -       Exported charts and graphs
-- README.md	  -            Project overview, objectives, methodology and results
-- requirements.txt -     	Python libraries required to run the project
-
+What each folder holds:
+* Folder/file	- Contents
+* data/raw/ -	The original dataset and ID mapping file, kept unchanged
+* data/processed/ -	The cleaned dataset produced after preprocessing
+* notebooks/- The Jupyter notebook covering cleaning, mapping, EDA and insights
+* dashboard/ - The Power BI file with DAX measures, slicers and page navigation
+* reports/ - The SRS and the full project report
+* image/ - Dashboard screenshots shown in the Dashboard Preview section
+* requirements.txt -	Python libraries required to run the project
+  
 ## Scope and Limitations
 
 - The dataset covers historical hospital encounters from **1999 to 2008**; findings may not reflect current healthcare practices.
@@ -351,20 +356,58 @@ The exploratory analysis highlighted several important patterns:
 
 6. **Medication Management:** Slightly higher readmission rates among encounters involving medication changes suggest the importance of medication reconciliation and follow-up care.
 
+### Dashboard Preview
 
+The Power BI dashboard has a home page with navigation and five analysis pages. Slicers let viewers filter by age group, gender, race, admission type, insulin and HbA1c result.
+
+**1. Executive Overview**
+
+Headline KPIs (total encounters, 30-day readmissions and rate, average length of stay) and how the rate varies by age, prior visits, stay length, gender and race.
+
+**2. Patient Risk & Readmission Analysis**
+
+Which patients are at higher risk: rate by previous inpatient visits, previous emergency visits, number of diagnoses, and age and gender.
+
+**3. Clinical & Care Quality Analysis**
+
+How discharge destination, medication status, medication changes, insulin use and HbA1c testing relate to readmission.
+
+**4. Hospital Utilization & Operational Insights**
+
+Hospital days, length of stay, admission type and discharge disposition.
+
+**5. Clinical & Medication Insights**
+
+Insulin usage, HbA1c results, medication changes, diabetes medication usage and blood glucose results.
+
+### Limitations
+* The data covers 1999–2008, so findings may not reflect current clinical practice.
+* Rates describe encounters, not unique patients.
+* Weight (96.9%) and HbA1c (83.3%) are mostly unknown, which limits conclusions about glycaemic control.
+* Associations do not establish causation.
+* Readmission is not a complete measure of care quality, because returns can reflect disease severity.
+* Patients who died or went to hospice cannot be readmitted, which slightly lowers observed rates for those groups.
+* The project provides analytical insights only, not medical advice or individual patient recommendations.
+
+### Future Work
+
+* Analyse at the unique-patient level using patient_nbr.
+* Group diagnosis codes (diag_1 to diag_3) into disease categories.
+* Exclude expired and hospice discharges and recalculate rates.
+* Test the statistical significance of group differences.
+* Validate the findings with more recent data.
+  
 ### Conclusion
 
-The EDA phase provided valuable insights into 30-day hospital readmission patterns among diabetic inpatients.
+This project examined 101,766 hospital encounters of diabetic patients to understand 30-day readmission patterns. About 11.2% of encounters ended in a readmission within 30 days.
 
-Previous inpatient admissions emerged as an important factor associated with higher readmission rates. Other factors, including age, length of hospital stay, number of diagnoses, medication patterns, and discharge destination, also showed variations in readmission outcomes.
+The strongest indicators were a history of previous inpatient admissions, a higher number of diagnoses and medications, longer stays and discharge to institutional care. Age, gender and race showed smaller differences. A large gap in HbA1c documentation (83.3% unrecorded) points to an opportunity to improve diabetes monitoring.
 
-The findings highlight opportunities for healthcare providers to investigate patient complexity, strengthen discharge planning, improve diabetes monitoring, and support coordinated post-discharge care.
+Together, the Python analysis and the Power BI dashboard give hospital teams a clear, interactive view of where early readmissions concentrate, so follow-up resources can be directed to the patients who need them most.
 
-This exploratory analysis establishes a foundation for further investigation into the factors associated with hospital readmissions and the development of data-driven healthcare recommendations.
+Because the data is historical and the results show association rather than cause, the findings are best used to guide further investigation and planning, not to make clinical decisions on their own.
 
-
-
-# Dashboard Preview
+# Dashboard Screenshots
 
 ## 1. Executive Dashboard
 
