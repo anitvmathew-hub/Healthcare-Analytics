@@ -362,5 +362,19 @@ The findings highlight opportunities for healthcare providers to investigate pat
 
 This exploratory analysis establishes a foundation for further investigation into the factors associated with hospital readmissions and the development of data-driven healthcare recommendations.
 
+## 📊 Dashboard Preview
 
+### Executive Dashboard
+![Executive Dashboard](image/Executive Overview.png)
 
+### Readmission Overview
+![Readmission Overview](image/Patient Risk & Readmission Analysis.png)
+
+### Patient Analysis
+![Patient Analysis](image/Clinical & Care Quality Analysis.png)
+
+### Hospital Utilization & Operational Insights
+![Readmission Overview](image/Hospital Utilization & Operational Insights.png)
+
+### Clinical & Medication Insights
+![Patient Analysis](image/Clinical & Medication Insights.png)
